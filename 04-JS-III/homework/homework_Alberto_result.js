@@ -67,7 +67,7 @@ function arrayContiene(array, elemento) {
   // Tu código:
   var a;
   for (let i = 0; i < array.length; i++) {
-    if (array[i] == elemento) {
+    if (array[i] === elemento) {
       a = +1;
     }
   }
@@ -97,7 +97,8 @@ function promedioResultadosTest(resultadosTest) {
   for (let i = 0; i < resultadosTest.length; i++) {
     a += resultadosTest[i];
   }
-  return a / resultadosTest.length;
+  var b = a / resultadosTest.length;
+  return b;
 }
 
 function numeroMasGrande(numeros) {
